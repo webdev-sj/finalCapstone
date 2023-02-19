@@ -1,0 +1,202 @@
+  /* styles for logo photo */
+.css_logo_main {
+  background-color: black;
+  padding: 2vh;
+  padding-bottom: 0;
+  vertical-align: top ;
+}
+.css_main_logo {
+  display: block;
+  height: auto;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  width: 50%;
+}
+
+/* background styling*/
+.backGround {
+  background-color: rgb(20, 167, 220);
+  left:0;
+  margin:0;
+  padding:0;
+  top:0;
+}
+
+/* styling the gallery */
+.back_border{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 10px 20px 40px;
+}
+.gallery {
+  background-color: aliceblue;
+  border-radius: 20px;
+  width: 100%;
+}
+.gallery:hover {
+  border: 1px solid #777;
+}
+.gallery img {
+  height: auto;
+  width: 100%;
+}
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* styling the images */
+.css_images {
+  padding: 0 6px;
+  width: 20.99999%;
+  margin: auto;
+}
+img {
+  border-radius: 20px; 
+}
+
+/* styling the titles */
+.titles {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+} 
+.cssH1 {
+  color: aliceblue;
+  font-family: monospace;
+  font-size: 3rem;
+}
+.cssH3 {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  text-align: center;
+}
+ul {
+  line-height:300%;
+  padding: 1rem;
+}
+/* Styling the list and fonts */
+.css_list {
+  background-color: rgb(30 30 30);
+  border-radius: 20px;
+  color: rgb(136 189 217);
+  margin: 50px auto 30px;
+  padding: 2rem;
+  width: 50%;
+}
+.back_list {
+  padding: 2rem 1rem;
+}
+/* styling and centering the subscribe button */
+.subscribe {
+  font-size: 3em;
+  text-align: center;
+}
+
+/* styling the pop-up */
+#popupBoxAdvert{
+  max-width: 900px;
+  max-height: 600px;
+  margin: auto;
+  background-color: aliceblue;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+}
+.popupAdTitle{
+  color: rgb(20, 167, 220) ;
+  padding-top: 10vh;
+  text-align: center;
+  margin: 0 5rem;
+  font-size: 4vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* styling the buttons for the Ad */
+.popupAdBtn {
+  background-color: rgb(20, 167, 220);
+  color: aliceblue;
+  border: rgb(34, 39, 41);
+  display: block;
+  margin: 20px auto;
+  border-radius: 30px;
+}
+.strNow {
+  padding: 20px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+/* styling the table and its data */
+table {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1rem;
+  padding-top: 6vh;
+  width: 80%;
+}
+.table-data {
+  background-color:#244c60;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  gap: 1.5vw;
+  text-align: center;
+}
+td{
+  border-radius: 5px;
+  padding-bottom: 0.5vh;
+  padding-top: 0.5vh;
+}
+
+/* styling the hover state of the button */
+td:hover {
+  background-color: #46CDCF;
+}
+th{
+  background-color: #123131;
+  border-radius: 5px;
+  color: aliceblue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2vw;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+}
+a {
+  text-decoration: none;
+}
+
+/* resize when screen becomes smaller than 760px*/
+@media only screen and (max-width: 760px) {
+  .css_images {
+    margin: 6px auto;
+    width: 90%;
+  }
+ .popupAdTitle {
+  font-size: 6vw;
+  padding-top: 50px;
+ }
+ .strNow {
+  font-size: 1rem;
+  text-decoration: none;
+}
+#popupBoxAdvert{
+  width: 280px;
+  max-height: fit-content;
+}
+li {
+  line-height: 25px;
+}
+.css_list{
+  margin: auto;
+  width: 80%;
+}
+table {
+  width: 90%;
+}
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>my page</title>
+      <!-- link to style sheets -->
+      <link rel="stylesheet" href="../styles/styles.css">
+      <link rel="stylesheet" href="../styles/navbar.css">
+      <link rel="stylesheet" href="../styles/userPage.css">
+        <!-- favicon for image at top of tab -->
+   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<!-- navbar -->
+<div class="navbars">
+
+   <div id="mySidenav" class="sidenav">
+      <!-- close button function -->
+      <a class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../index.html">Home</a>
+      <a href="../pages/02html.html">html</a>
+      <a href="../pages/03css.html">css</a>
+      <a href="../pages/04js.html">javaScript</a>
+      <a href="../pages/05contact.html">contact</a>
+   </div>
+
+<span class="openSideNav" style="font-size:30px;cursor:pointer" onmouseover="openNav()">&#9776;</span>
+
+
+<!-- side user page -->
+<div id="sideUserPage" class="sideUserPage">
+   <!-- close button function -->
+   <a class="closebtn" onclick="closeUserPage()">&times;</a>
+      <a href="../pages/userPage.html" id="myId" class="myId">My Profile</a>
+      <!-- saved items to view in side menu -->
+      <div id="userDivSave">
+         <h3 class="userDivTitle">Saved Items</h3>
+            <span id="userSavedItems" class="userSavedItems"> 
+               <div class="userPageSavedDiv">
+                  <div id="userPageSavedNav" class="userPageSavedNav"></div>
+               </div>  
+            </span>
+         </div>
+      <div id="logOutUserPage" class="logOutUser"><a href="">logout</a></div>
+   </div>
+
+<span id="userProfilePage" class="userProfilePage" style="font-size:30px;cursor:pointer" onmouseover="openUserPage()"> 
+   <div id="userName">
+      <span style='font-size:35px;'>&#8920;</span>
+   </div>
+ </span>
+</div> 
+<!-- end of navbars -->
+
+
+<div class="userPage">
+   <div class="userPageSavedDivMain">
+      <div class="userDivLeft">
+         <img src="../images/logo images/com code with me-logos_white.png" alt="company logo" class="userPageImg">   
+   </div>
+   <!-- store and view the saved items -->
+      <div class="userDivRight">
+         <h1 class="userH1">Your saved items</h1>
+            <hr>
+         <div id="userPageSaved" class="userPageSaved"></div>
+      </div>
+   </div>
+</div>
+ 
+ <!-- footer with company logo and copyright -->
+ <footer>
+    <div class="images-container">
+       <a href="./index.html">
+          <img class="small_logo" src="../images/logo%20images/Sml%20com%20code%20with%20me-logos_transparent.png" alt="logo in small">
+         </a>
+         <div class="copyright">Capstone Project V — &copy; <em>HyperionDev 2023</em>
+         </div>
+      </div>
+   </footer>
+
+<!-- links to javaScript files --> 
+<script src="../js/userPage.js"></script>
+ <script src="../js/navbar.js"></script>
+<script src="../js/popup.js"></script>
+
+</body>
+</html>

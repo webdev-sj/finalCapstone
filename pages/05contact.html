@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contact CCWM</title>
+   <!-- link to style sheets -->
+   <link rel="stylesheet" href="../styles/styles.css">
+   <link rel="stylesheet" href="../styles/05contact.css">
+   <link rel="stylesheet" href="../styles/navbar.css">
+
+   <!-- favicon for image at top of tab -->
+   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+    <body>
+        <!-- main contact me logo -->  
+        <div class="contact_logo_main">
+       <div>
+           <img class="contact_main_logo" src="../images/05%20contact%20images/contact001Task29.png" alt="contact me logo">
+        </div>
+    </div>
+   
+ 
+<!-- navbar -->
+<div class="navbars">
+
+    <div id="mySidenav" class="sidenav">
+        <!-- close button function -->
+        <a class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html">Home</a>
+        <a href="../pages/02html.html">html</a>
+        <a href="../pages/03css.html">css</a>
+        <a href="../pages/04js.html">javaScript</a>
+        <a href="../pages/05contact.html">contact</a>
+        <a href="../pages/userPage.html" id="myIdNav" class=""></a>
+    </div>
+  <!-- open nav on hover -->
+  <span class="openSideNav" style="font-size:30px;cursor:pointer" onmouseover="openNav()">&#9776;</span>
+  
+  <!-- side user page -->
+  <div id="sideUserPage" class="sideUserPage">
+    <!-- close button function -->
+    <a class="closebtn" onclick="closeUserPage()">&times;</a>
+        <a href="../pages/userPage.html" id="myId" class="myId">My Profile</a>
+          <div id="userDivSave">
+       <h3 class="userDivTitle">Saved Items</h3>
+    <div id="userPageSaved"></div>
+       <span id="userSavedItems" class="userSavedItems">
+    </span>
+</div>
+    <!-- div to log out  -->
+<div id="logOutUserContact" class="logOutUser"><a href="">logout</a></div>
+  </div>
+
+  <!-- open nav on hover -->
+  <span id="userProfilePage" class="userProfilePage" style="font-size:30px;cursor:pointer" onmouseover="openUserPage()"> 
+    <div id="userName">
+       <span style='font-size:35px;'>&#8920;</span>
+    </div>
+  </span>
+  </div> 
+  <!-- end of navbars -->
+    
+  
+    <div>
+      <div class="bg-info">
+          <!-- icon of an envelope, click on it to contact us -->
+          <div class="mail-photo">
+             <div>
+                <div class="info-mail"> <a href="mailto:me@gmail.com"><img src="../images/icons/email.png" alt="mail icon"></a></div>
+             </div>
+             <a href="mailto:memail@gmail.com" class="mail-link"><h2 class="mail-move">Get in touch</h2></a>
+           </div>
+  
+        <!-- radio button questionnaire -->
+           <div>
+               <div>
+            </div>
+            <div class="form">
+                <h2 class="table-title">Questionnaire</h2>
+                <form>
+                       <p id=form-prompt>Where did you hear about us?</p><br>
+                       <input type="radio" id="wordMouth" name="ageName" value="word">
+                       <label for="wordMouth">Word of mouth / Friends / Family</label><br><br>
+                       <input type="radio" id="socialMedia" name="smedia" value="social">
+                       <label for="socialMedia">Social media / Instagram / Facebook</label><br><br>
+                       <input type="radio" id="television" name="tv-ad" value="tv">
+                       <label for="television">Television / Advertisments / Radio</label><br><br>
+                   <div><button type="submit" class="btn">Submit</button></div>
+              </form>   
+          </div>
+      </div>
+  <!-- main photo of code -->
+    <div>
+        <div class="code-photo">
+            <div>
+                <div><img src="../images/05%20contact%20images/photo-1516259762381-22954d7d3ad2.avif" alt=""> </div>
+            </div>
+        </div>
+    </div>
+    
+<div class="bottomContact">
+    <!-- a list of what we offer -->
+    <div>
+        <div>
+            <div class="table-title table-title02">
+                <h2>What a great time to start coding</h2>
+                <span class="title-second"> for just £1 per month</span>
+            </div>
+              <ul class="list-items">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Bootstrap</li>
+                  <li>JavaScript</li>
+                  <li>Node.js</li>
+                  <li>SQL</li>
+              </ul>
+        </div>
+    </div>
+  
+    <!-- Subscribe to our newsletter email field.  -->
+    <!-- it doesnt work just yet -->
+    <fieldset class="table-title table-title02 table-title03">
+        <div class="newsletter-bg">
+            <h2 class="newsletter">Subscribe to our newsletter</h2>
+                <div class="form-control">
+                    <form action="newsletter.php" method="POST">
+                        <input type="text" placeholder="enter your email" class="text-submit">
+                            <input type="submit" name="submit01" value="Submit" class=" btn-2">
+                                </form>
+                        </div>
+                    </div>  
+            </fieldset>
+        </div>
+    </div>
+</div>    
+
+<!-- information on why i decided to work on this project-->
+<div class="info-bg-box">
+    <div>
+        <div class="text-info-bg">
+            <h3>Why I chose this project</h3>
+            <p>I thought it would be a great way to learn by teaching. Even though the road ahead is long, within time this website will be up and running, with actual topics to learn.</p>
+        </div>
+             </div>
+        <div>
+            <div class="text-info-bg">
+                <h3>My first idea was a coffee shop</h3>
+                <p>I misunderstood the task, and ended up creating a responsive website for a coffeeshop. But realised it had to be a website of a hobby, or somthing i enjoy. So i started from scratch, and thought a website about coding would be a great way for me to learn and improve my skills.</p>
+            </div>
+        </div>
+        <div>
+            <div class="text-info-bg">
+                <h3>Too many ideas</h3>
+                <p>One of the problems i faced with this task is that i had too many ideas. Should have sat down and done some brainstorming and few sketches, but i am far behind with my tasks, so decided to create ideas as i go. <b>It was a bad idea!</b></p>
+            </div>
+        </div>
+        <div>
+            <div class="text-info-bg">
+                <h3>Plan plan and plan</h3>
+                <p>I have learnt so much working on this task. But if i had to pick out one thing i have leant to pass as advice, that would be: "Give your project time when you start, write psudo code, draw sketches and plan ahead, you'll thank yourself later!"</p>
+            </div>
+        </div>
+    </div> 
+<!-- End of information -->
+</div>
+  
+
+<!-- contact us form -->
+<div class="contactBottom">
+    <div class="contactsDivDivider">
+        <h1>Feel free to contact us via email or direct comment</h1>
+    </div>
+    <div class="contactsDivDivider">
+        <form class="quickComment" name="contactForm" action="mailto:email@email.com" onsubmit="return validateForm()" method="post">
+            <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                  <br><br>
+            <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                    <br><br>
+            <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment"></textarea>
+                     <br><br>
+            <input class="commentBtn" type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<!-- footer with company logo and copyright -->
+<footer>
+    <div class="images-container">
+        <a href="../index.html">
+            <img class="small_logo" src="../images/logo%20images/Sml%20com%20code%20with%20me-logos_transparent.png" alt="logo in small"></a>
+        <div class="copyright">Capstone Project V — &copy; <em>HyperionDev 2023</em></div>
+    </div>
+</footer>
+
+<!-- links to javaScript files --> 
+<script src="../js/05contact.js"></script>
+<script src="../js/navbar.js"></script>
+<script src="../js/popup.js"></script>
+
+</body>
+</html>

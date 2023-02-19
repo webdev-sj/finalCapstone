@@ -1,0 +1,78 @@
+/* styling the pop up */
+#overlay, #overlayName {
+   display: none;
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: 5;
+   background-color: rgba(0, 0, 0, 0.5);
+ }
+ /* back popup box, centered to middle of page */
+ #popupBox {
+   max-width: 600px;
+   height: 300px;
+   margin: auto;
+   background-color: rgb(188, 198, 207);
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   border-radius: 20px;
+ }
+ /* styling the close button  */
+ .close-btn {
+   cursor: pointer;
+   float: right;
+   margin: 8px 18px;
+   font-size: 2rem;
+   font-weight: bold;
+ }
+
+.titleUserPopup { 
+   margin-top: 10px;
+}
+.userInformation, .userPopInfo {
+   text-align: center;
+}
+
+/* styling the popup button  */
+.userInput, .btnUserName {
+   border-radius: 5px;
+   border-style: none;
+ }
+.btnUserName {
+   padding: 13px;
+   width: 40%;
+   background-color: black;
+   color: white;
+}
+
+/* styling the user input  */
+.userInput {
+   padding: 8px;
+   margin-bottom: 15px;
+   width: 60%;
+}
+.userInformation {
+   margin: 52px 0 20px 30px;
+
+}
+.userPopInfo {
+   margin-top: 30px;
+}
+/* styling and sligning the popup */
+#popupBoxAd {
+   max-width: 900px;
+   max-height: 600px;
+   margin: auto;
+   background-color: rgb(188, 198, 207);
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   border-radius: 20px;
+ }

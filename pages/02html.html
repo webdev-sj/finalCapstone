@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CCWM HTML</title>
+   <!-- link to style sheets -->
+   <link rel="stylesheet" href="../styles/styles.css">
+   <link rel="stylesheet" href="../styles/02html.css">
+   <link rel="stylesheet" href="../styles/navbar.css">
+   <!-- favicon for image at top of tab -->
+   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<!-- main html logo -->
+<div class="html_logo_main logo-big">
+   <div>
+      <img class="html_main_logo" src="../images/02%20html%20images/html001Task29.png" alt="learn html logo">
+   </div>
+<!-- navbar -->
+<div class="navbars">
+
+   <div id="mySidenav" class="sidenav">
+      <a class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../index.html">Home</a>
+      <a href="../pages/02html.html">html</a>
+      <a href="../pages/03css.html">css</a>
+      <a href="../pages/04js.html">javaScript</a>
+      <a href="../pages/05contact.html">contact</a>
+      <a href="../pages/userPage.html" id="myIdNav" class=""></a>
+   </div>
+<!-- open nav on hover -->
+<span class="openSideNav" style="font-size:30px;cursor:pointer" onmouseover="openNav()">&#9776;</span>
+
+<!-- side user page -->
+<div id="sideUserPage" class="sideUserPage">
+      <!-- close button function -->
+   <a class="closebtn" onclick="closeUserPage()">&times;</a>
+   <a href="../pages/userPage.html" id="myId" class="myId">My Profile</a>
+      <div id="userDivSave">
+         <h3 class="userDivTitle">Saved Items</h3>
+            <div id="userPageSavedHtml"></div>
+        <span id="userSavedItems" class="userSavedItems">    </span>
+       </div>
+   <!-- div to log out the user -->
+   <div id="logOutUserHtml" class="logOutUser"><a href="">logout</a></div>
+</div>
+<!-- open nav on hover -->
+<span id="userProfilePage" class="userProfilePage" style="font-size:30px;cursor:pointer" onmouseover="openUserPage()"> 
+   <div id="userName">
+      <span style='font-size:35px;'>&#8920;</span>
+   </div>
+ </span>
+</div> 
+<!-- end of navbars -->
+
+<div class="backGround">
+   <div class="htmlInformationDiv">
+      <div class="htmlInfo">
+         <div class="main-content-html">
+      </div>
+   </div>
+</div>   
+
+<!-- subscription button directs you to 'contact us' page -->
+<div class="subscribe_box">
+   <div class="subscribe">
+      <a href="../pages/05contact.html"><p class="subscribe_text"><b>Subscribe</b> now and join the millions learning web development</p></a> 
+   </div>
+</div>
+
+<!-- main image for html -->
+<div class="image-bg">
+   <div class="image-main">
+      <img src="../images/02%20html%20images/HTML%20Screenshot%202023-01-21%20at%2023.10.06.png" alt="html screenshot">
+   </div>
+</div>
+
+<!-- cards with information placed in a responsive grid -->
+<!-- hearts can be toggled "on" and "off" -->
+<div class="main-content">    
+   <div class="card">
+      <div class="heartBtn" id="heartBtn">&#9829;</div>
+         <i class="information_boxes">Basics</i>
+            <h1>html & css</h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi loremscel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+      <button onclick="myShowFunction()" id="myBtn" class="btnReadMore">Read more...</button>
+   </div>
+
+   <div class="card">
+      <div class="heartBtn" id="heartBtn02" >&#9829;</div>
+         <i class="information_boxes">Begginer</i>
+            <h1>bootstrap</h1>
+         <p> Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas rytae, Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span id="dots2">...</span><span id="more2">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+      <button onclick="myShowFunction2()" id="myBtn2" class="btnReadMore">Read more...</button>
+   </div>
+
+   <div class="card"> 
+      <div class="heartBtn" id="heartBtn03" >&#9829;</div>
+         <i class="information_boxes">Begginer</i>
+            <h1>Vanilla JS</h1>
+         <p> Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas rytae, Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span id="dots3">...</span><span id="more3">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+      <button onclick="myShowFunction3()" id="myBtn3" class="btnReadMore">Read more...</button>                
+   </div> 
+
+   <div class="card">
+      <div class="heartBtn" id="heartBtn04" >&#9829;</div>
+         <i class="information_boxes">Intermediate</i>
+            <h1>React, Vue</h1>
+         <p> Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas rytae, Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span id="dots4">...</span><span id="more4">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+      <button onclick="myShowFunction4()" id="myBtn4" class="btnReadMore">Read more...</button>        
+   </div>
+
+   <div class="card">
+      <div class="heartBtn" id="heartBtn05" >&#9829;</div>
+         <i class="information_boxes">Intermediate</i>
+            <h1>Node.js</h1>
+         <p> Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas rytae, Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span id="dots5">...</span><span id="more5">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+      <button onclick="myShowFunction5()" id="myBtn5" class="btnReadMore">Read more...</button>        
+   </div>
+
+   <div class="card"> 
+      <div class="heartBtn" id="heartBtn06" >&#9829;</div>
+         <i class="information_boxes">Intermediate</i>
+            <h1>Advanced JS</h1>
+         <p> Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas rytae, Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span id="dots6">...</span><span id="more6">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+      <button onclick="myShowFunction6()" id="myBtn6" class="btnReadMore">Read more...</button>         
+   </div>        
+   
+   <div class="card">
+      <div class="heartBtn" id="heartBtn07" >&#9829;</div>
+         <i class="information_boxes">Advanced</i>
+            <h1>html & css</h1>
+          <p> Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas rytae, Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span id="dots7">...</span><span id="more7">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+      <button onclick="myShowFunction7()" id="myBtn7" class="btnReadMore">Read more...</button>   
+   </div>
+
+   <div class="card">
+      <div class="heartBtn" id="heartBtn08" >&#9829;</div>
+         <i class="information_boxes">Advanced</i>
+            <h1>bootstrap</h1>
+         <p> Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas rytae, Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span id="dots8">...</span><span id="more8">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+      <button onclick="myShowFunction8()" id="myBtn8" class="btnReadMore">Read more...</button>        
+    </div>
+</div>
+</div> 
+
+<!-- footer with company logo and copyright -->
+<footer>
+   <div class="images-container">
+      <a href="../index.html">
+         <img class="small_logo" src="../images/logo%20images/Sml%20com%20code%20with%20me-logos_transparent.png" alt="logo in small"></a>
+         <div class="copyright">Capstone Project V — &copy; <em>HyperionDev 2023</em>
+         </div>
+      </div>
+   </footer>
+
+<!-- links to javaScript files -->
+   <script src="../js/02html.js"></script>
+   <script src="../js/navbar.js"></script>
+   <script src="../js/popup.js"></script>
+
+</body>
+</html>
