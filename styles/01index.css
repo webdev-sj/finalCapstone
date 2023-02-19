@@ -1,0 +1,174 @@
+/* styles for logo photo */
+.logo_main {
+   background-color: black;
+   padding: 2vh;
+   padding-bottom: 0;
+   vertical-align: top ;
+ }
+ .main_logo {
+   display: block;
+   height: auto;
+   margin-bottom: 1vh;
+   margin-left: auto;
+   margin-right: auto;
+   width: 40%;
+ }
+
+/* background styling*/
+.backGround {
+   background-color: aquamarine;
+   padding-top: 100px;
+}
+   
+/* styling the quote  */
+.quote {
+  color:coral;
+  display: flex;
+  flex-wrap: wrap; 
+  font-size: 3vw;
+  font-weight: bold;
+  padding: 100px;
+}
+.quote_bg {
+  background-color: aliceblue;
+  border-radius: 20px;
+  margin: 1em;
+}
+
+/* styling the figcaption */
+.fig {
+  color: rgb(103, 182, 156);
+  font-size: 2vw;
+}
+
+/* styles for subscription box and text */
+.subscribe_box{
+  background-color: aliceblue;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.subscribe {
+  padding: 1vw;
+}
+.subscribe_text{
+  color:coral;
+  font-size: 2rem;
+  font-style: oblique;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+/* comments & reviews */
+
+.comments-main-bg {
+  margin: 100px auto 0;
+  padding: 20px;
+  background-color: coral;
+  border-radius: 20px;
+  width: 70%;
+}
+.commentsAdded {
+  color: rgb(101, 99, 99);
+  line-height: 50px;
+  padding:2px 20px;
+  background-color: aliceblue;
+  border-radius: 0 0 20px 20px;
+  margin: 0 auto 20 auto
+}
+ strong{
+  color:rgb(10, 170, 170);
+}
+input {
+  border-radius: 5px;
+  border: none;
+}
+/* hardcoded comments */
+.hardcodedComments {
+  margin-top: 20px;
+  border-radius: 20px 20px 0 0 ;
+  color: rgb(101, 99, 99);
+  line-height: 50px;
+  padding: 20px 20px 0 20px;
+  background-color: aliceblue;
+  margin: 20px auto 0 auto;
+}
+.hardcodedComments p {
+  margin-bottom: 0;
+}
+.CommentsAdded p {
+  margin-top: 0;
+}
+.flexReviews{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: auto 20px 20px;
+  max-width: 100%;  
+  gap: 10px;
+}
+.flexReviews button {
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(249, 216, 205);
+  color: rgb(144, 70, 43);
+}
+.userComment, .userCommentName {
+  padding: 10px;
+}
+.commentsSection h1{
+  color: rgb(250, 250, 250);
+  text-align: center;
+  font-size: 2.5rem;
+}
+.title-comment{
+  padding: 30px 0 20px;
+  margin-left: 4px;
+  font-size: 30px;
+  font-style: italic;
+  color:aliceblue;
+  text-align: center;
+}
+
+ 
+/* resize when screen becomes smaller than 760px*/
+@media screen and (max-width: 760px) {
+  .navbar {   
+    flex-direction: column;
+  }
+ .backGround{
+  padding-top: 20px;
+
+ }
+  .quote{
+    padding: 10px;
+    font-size: 6vw;
+    margin: 0;
+  }
+  .fig{
+font-size: 3vw;
+padding: 20px;
+ }
+  .subscribe_box{
+    border-radius: 10px;
+    margin-left: 20px;
+    min-width: 300px;
+  }
+  .subscribe_text{
+    font-size: 1.3rem;
+  }
+ .comments-main-bg{
+  margin-top: 20px;
+ }
+
+ .hardcodedComments, .commentsAdded{
+  line-height:18px;
+ }
+ .title-comment{
+  font-size: 25px;
+ }
+ }
+ 

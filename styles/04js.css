@@ -1,0 +1,98 @@
+/* styles for logo photo */
+  .js_logo_main {
+  background-color: black;
+  padding: 2vh;
+  padding-bottom: 0;
+  vertical-align: top ;
+}
+.js_main_logo {
+  display: block;
+  height: auto;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  width: 80%;
+}
+/* background styling*/
+.backGround {
+  background-color: rgb(232, 84, 84);
+}
+
+/* styling the gid contents */
+.main-content {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin: auto;
+  max-width: 70%;
+  width: 95%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center; 
+}
+a {
+ color: #278da4;
+ text-decoration: none;
+}
+p {
+ margin-bottom: 1.25em;
+}
+
+/* styling the contents of the cards in the grid */
+.information_boxes {
+  color: #42b4d6; 
+  font-size: 2.25em;
+}
+.card {
+  background-color: aliceblue;
+  border: 1px solid #e1e1e1;
+  border-radius: 1em;
+  padding: 1.5em 1em;
+  position: relative;
+}
+.card h1 {
+  color: #2694b9; 
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 1.25;
+  margin: 0;
+}
+.card p{
+  color:#207c9b;
+  margin-top: 1em;
+}
+
+/* button styles */
+.btn {
+ background-color: #207c9b;
+ border-radius: 0.5em;
+ color: #fff;
+ display: block;
+ font-size: 0.85em;
+ font-weight: bold;
+ padding: 0.75em 1.5em;
+}
+
+/* save button */
+.btnSaveForLater {
+  margin-top: 10px;
+  color:#207c9b;
+  background-color: aliceblue;
+  text-align: center;
+  font-size: 15px;
+  border: none;
+  cursor:pointer;
+}
+
+/* resize when screen becomes smaller than 960px*/
+@media only screen and (max-width: 960px) {
+  .backGround {
+    min-height: 1000px;
+ }
+}
+/* resize when screen becomes smaller than 700px*/
+@media only screen and (max-width: 700px) {
+  .backGround {
+    min-height: 1850px;
+  }
+ }

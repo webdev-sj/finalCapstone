@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CCWM CSS</title>
+   <!-- link to style sheets -->
+   <link rel="stylesheet" href="../styles/styles.css">
+   <link rel="stylesheet" href="../styles/03css.css">
+      <link rel="stylesheet" href="../styles/navbar.css">
+      <link rel="stylesheet" href="../styles/popup.css">
+   <!-- favicon for image at top of tab -->
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+  <body>
+   
+<!-- main css logo -->   
+<div class="css_logo_main logo-big">
+   <div>
+      <img class="css_main_logo" src="../images/03%20css%20images/css001Task29.png" alt="learn css logo">
+   </div>
+
+<!-- navbar -->
+<div class="navbars">
+
+  <div id="mySidenav" class="sidenav">
+      <!-- close button function -->
+     <a class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="../index.html">Home</a>
+     <a href="../pages/02html.html">html</a>
+     <a href="../pages/03css.html">css</a>
+     <a href="../pages/04js.html">javaScript</a>
+     <a href="../pages/05contact.html">contact</a>
+     <a href="../pages/userPage.html" id="myIdNav" class=""></a>
+  </div>
+<!-- open nav on hover -->
+<span class="openSideNav" style="font-size:30px;cursor:pointer" onmouseover="openNav()">&#9776;</span>
+
+<!-- side user page -->
+<div id="sideUserPage" class="sideUserPage">
+  <!-- close button function -->
+  <a class="closebtn" onclick="closeUserPage()">&times;</a>
+  <a href="../pages/userPage.html" id="myId" class="myId">My Profile</a>
+  <div id="userDivSave">
+    <h3 class="userDivTitle">Saved Items</h3>
+    <div id="userPageSavedCss"></div>
+    <span id="userSavedItems" class="userSavedItems">    </span>
+  </div>
+  <!-- div to log out the user -->
+  <div id="logOutUserCss" class="logOutUser"><a href="">logout</a></div>
+</div>      
+<!-- open nav on hover -->
+<span id="userProfilePage" class="userProfilePage" style="font-size:30px;cursor:pointer" onmouseover="openUserPage()"> 
+  <div id="userName">
+     <span style='font-size:35px;'>&#8920;</span>
+  </div>
+</span>
+</div> 
+<!-- end of navbars -->
+
+
+
+
+<!-- popup advert will start after a few seconds when user lands on this page -->
+<div id="overlay">
+  <div id="popupBoxAdvert"> 
+      <span id="closeBtn" class="close-btn">&times;</span>
+            <div class="popupMainAdvert">
+                <h2 class="popupAdTitle">There's never been a better time to start coding</h2>
+                  <a href="../pages/05contact.html" class="strNow"><button class="popupAdBtn"><div class="strNow">why not start now</div></button></a>
+               </div>
+            </div>
+          </div>
+        <div class="backGround">
+
+<!-- table of information of what we offer -->
+    <table>
+      <tr class="table-data">
+         <th>WEEK 1</th>
+         <th>WEEK 2</th>
+         <th>WEEK 3</th>
+         <th>WEEK 4</th>
+      </tr>
+      <tr class="table-data">
+         <td>Intro to html</td>
+         <td>HTML Styles - CSS</td>
+         <td>HTML JavaScript</td>
+         <td>HTML Graphics</td>
+      </tr>
+      <tr class="table-data">
+         <td>HTML Editors</td>
+         <td>HTML Favicon</td>
+         <td>HTML Responsive Web</td>
+         <td>HTML Media</td>
+      </tr>
+      <tr class="table-data">
+         <td>HTML Elements</td>
+         <td><b>HTML Tables</b></td>
+         <td>HTML Forms</td>
+         <td>HTML APIs</td>
+      </tr>
+      <tr class="table-data">
+         <td>HTML Attributes</td>
+         <td>HTML class Attribute</td>
+         <td>HTML Input Attributes</td>
+         <td>HTML SSE API</td>
+      </tr>
+   </table>
+ 
+  <!-- list of css info -->
+  <div class="back_list">
+    <div class="css_list">
+        <h3 class="cssH3">Learning CSS, the ABC's</h3>
+          <ul>
+            <li>(Cascading Style Sheets) allows you to create great-looking web pages, but how does it work under the hood? </li>
+                <li>CSS stands for Cascading Style Sheets</li>
+                <li>CSS is a rule-based language by specifying groups of styles that should be applied to particular elements groups of element</li>
+                <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                <li>CSS saves a lot of work. It can control the layout of mlitiple web pages all at once</li>
+                <li>External stylesheets are stored in CSS files</li>
+            </ul>
+          </div>
+        </div>
+<!-- images with text information, placed side by side by the help of Css -->
+  <div class="back_border">
+    <div class="css_images">
+      <div class="gallery">
+        <a target="_blank" href="../images/03%20css%20images/01%20Screenshot%202023-01-21%20at%2016.10.48.png">
+          <img src="../images/03%20css%20images/01%20Screenshot%202023-01-21%20at%2016.10.48.png" alt="css color" width="600" height="400">
+        </a>
+        <div class="desc">CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</div>
+      </div>
+    </div>
+    
+      <div class="css_images">
+        <div class="gallery">
+          <a target="_blank" href="../images/03%20css%20images/02%20Screenshot%202023-01-21%20at%2016.35.12.png">
+            <img src="../images/03%20css%20images/02%20Screenshot%202023-01-21%20at%2016.35.12.png" alt="html link css" width="600" height="400">
+          </a>
+        <div class="desc">To horizontally center a block element, use margin: auto; Setting the width of the element will prevent it from stretching out to the edges of its container.
+      </div>
+    </div>
+  </div>
+    
+    <div class="css_images">
+      <div class="gallery">
+        <a target="_blank" href="../images/03%20css%20images/03%20Screenshot%202023-01-21%20at%2016.14.36.png">
+          <img src="../images/03%20css%20images/03%20Screenshot%202023-01-21%20at%2016.14.36.png" alt="css margin" width="600" height="400">
+        </a>
+      <div class="desc">The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.</div>
+    </div>
+  </div>
+    
+        <div class="css_images">
+          <div class="gallery">
+            <a target="_blank" href="../images/03%20css%20images/04%20Screenshot%202023-01-21%20at%2016.30.05.png">
+              <img src="../images/03%20css%20images/04%20Screenshot%202023-01-21%20at%2016.30.05.png" alt="css background color" width="600" height="400">
+            </a>
+          <div class="desc">The CSS background properties are used to add background for elements.The background-color property specifies the background color element.      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of images and information list -->
+
+<!-- footer with company logo and copyright -->
+<footer> 
+  <div class="images-container">
+    <a href="../index.html">
+      <img class="small_logo" src="../images/logo%20images/Sml%20com%20code%20with%20me-logos_transparent.png" alt="logo in small"></a>
+        <div class="copyright">Capstone Project V — &copy; <em>HyperionDev 2023</em>
+      </div>
+    </div>
+  </footer>
+<!-- links to javaScript files --> 
+<script src="../js/03css.js"></script>
+<script src="../js/navbar.js"></script>
+<script src="../js/popup.js"></script>
+
+</body>
+</html>

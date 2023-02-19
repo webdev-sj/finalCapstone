@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CCWM JS</title>
+   <!-- link to style sheets -->
+   <link rel="stylesheet" href="../styles/styles.css">
+   <link rel="stylesheet" href="../styles/04js.css">
+   <link rel="stylesheet" href="../styles/navbar.css">
+   <!-- favicon for image at top of tab -->
+   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+   <body>
+
+<!-- main javascript logo -->  
+<div class="js_logo_main logo-big">
+   <div>
+      <img class="js_main_logo" src="../images/04%20js%20images/js001Task29.png" alt="learn js logo">
+   </div>
+
+<!-- navbar -->
+<div class="navbars">
+
+   <div id="mySidenav" class="sidenav">
+      <!-- close button function -->
+      <a class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../index.html">Home</a>
+      <a href="../pages/02html.html">html</a>
+      <a href="../pages/03css.html">css</a>
+      <a href="../pages/04js.html">javaScript</a>
+      <a href="../pages/05contact.html">contact</a>
+      <a href="../pages/userPage.html" id="myIdNav" class=""></a>
+   </div>
+<!-- open nav on hover -->
+<span class="openSideNav" style="font-size:30px;cursor:pointer" onmouseover="openNav()">&#9776;</span>
+
+<!-- side user page -->
+<div id="sideUserPage" class="sideUserPage">
+      <!-- close button function -->
+      <a class="closebtn" onclick="closeUserPage()">&times;</a>
+         <a href="../pages/userPage.html" id="myId" class="myId">My Profile</a>
+            <div id="userDivSave">
+               <h3 class="userDivTitle">Saved Items</h3>
+            <div id="userPageSavedJs"></div>
+         <span id="userSavedItems" class="userSavedItems">    </span>
+      </div>
+      <!-- div to log out the user -->
+   <div id="logOutUserJs" class="logOutUser"><a href="">logout</a></div>
+</div>
+ <!-- open nav on hover -->
+<span id="userProfilePage" class="userProfilePage" style="font-size:30px;cursor:pointer" onmouseover="openUserPage()"> 
+   <div id="userName">
+      <span style='font-size:35px;'>&#8920;</span>
+   </div>
+ </span>
+</div> 
+<!-- end of navbars -->
+
+<div class="backGround">
+<!-- cards with links to external information -->
+<!-- items can be saved to a user page and side menu bar -->
+   <div class="main-content">    
+      <div class="card">
+         <i class="information_boxes">Basics</i>
+            <h1>html & css</h1>
+               <p class="jsParagraphs">DLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula augue vitae libero vulputate, ut rutrum tellus posuere.</p>
+            <a class="btn" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">find out more about html</a>
+         <button class="btnSaveForLater" id="btnSaveForLater01">save for later</button>
+      </div>
+      <div class="card">
+         <i class="information_boxes">Begginer</i>
+            <h1>bootstrap</h1>
+               <p class="jsParagraphs">Nunc gravida purus vitae faucibus egestas. Nam nec sapien erat. Duis consectetur efficitur tristique. Sed non metus eu tortor porta iaculis.</p>
+            <a class="btn" href="https://www.w3schools.com/bootstrap/" target="_blank">find out more about bootstrap</a>
+         <div class="btnSaveForLater" id="btnSaveForLater02" >save for later</div>
+      </div> 
+   <div class="card"> 
+      <i class="information_boxes">Begginer</i>
+        <h1>Vanilla JS</h1>
+            <p class="jsParagraphs">Sed dui elit, vestibulum aliquet elit at, cursus ornare nibh. Proin lacus ante, aliquet in consequat in, pharetra sit amet urna consectetur. </p>
+         <a class="btn" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics" target="_blank">find out more about javaScript</a>        
+      <div class="btnSaveForLater" id="btnSaveForLater03" >save for later</div>
+   </div> 
+   <div class="card">
+      <i class="information_boxes">Basics</i>
+         <h1>html & css</h1>
+            <p class="jsParagraphs">DLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula augue vitae libero vulputate, ut rutrum tellus posuere.</p>
+         <a class="btn" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">find out more about html</a>
+      <button class="btnSaveForLater" id="btnSaveForLater04">save for later</button>
+   </div>
+   <div class="card">     
+      <i class="information_boxes">Begginer</i>
+         <h1>bootstrap</h1>
+            <p class="jsParagraphs">Nunc gravida purus vitae faucibus egestas. Nam nec sapien erat. Duis consectetur efficitur tristique. Sed non metus eu tortor porta iaculis.</p>
+               <a class="btn" href="https://www.w3schools.com/bootstrap/" target="_blank">find out more about bootstrap</a>
+            <div class="btnSaveForLater" id="btnSaveForLater05" >save for later</div>
+         </div>   
+      <div class="card"> 
+         <i class="information_boxes">Begginer</i>
+            <h1>Vanilla JS</h1>
+                  <p class="jsParagraphs">Sed dui elit, vestibulum aliquet elit at, cursus ornare nibh. Proin lacus ante, aliquet in consequat in, pharetra sit amet urna consectetur. </p>
+               <a class="btn" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics" target="_blank">find out more about javaScript</a>        
+            <div class="btnSaveForLater" id="btnSaveForLater06" >save for later</div>
+         </div> 
+      <div class="card">
+         <i class="information_boxes">Basics</i>
+            <h1>html & css</h1>
+               <p class="jsParagraphs">DLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula augue vitae libero vulputate, ut rutrum tellus posuere.</p>
+            <a class="btn" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">find out more about html</a>
+         <button class="btnSaveForLater" id="btnSaveForLater07">save for later</button>
+      </div>
+   <div class="card">
+      <i class="information_boxes">Begginer</i>
+         <h1>bootstrap</h1>
+            <p class="jsParagraphs">Nunc gravida purus vitae faucibus egestas. Nam nec sapien erat. Duis consectetur efficitur tristique. Sed non metus eu tortor porta iaculis.</p>
+               <a class="btn" href="https://www.w3schools.com/bootstrap/" target="_blank">find out more about bootstrap</a>
+            <div class="btnSaveForLater" id="btnSaveForLater08" >save for later</div>
+         </div>      
+      <div class="card"> 
+         <i class="information_boxes">Begginer</i>
+            <h1>Vanilla JS</h1>
+               <p class="jsParagraphs">Sed dui elit, vestibulum aliquet elit at, cursus ornare nibh. Proin lacus ante, aliquet in consequat in, pharetra sit amet urna consectetur. </p>
+            <a class="btn" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics" target="_blank">find out more about javaScript</a>        
+         <div class="btnSaveForLater" id="btnSaveForLater09" >save for later</div>
+      </div> 
+   <div class="card"> 
+      <i class="information_boxes">Begginer</i>
+         <h1>Vanilla JS</h1>
+            <p class="jsParagraphs">Sed dui elit, vestibulum aliquet elit at, cursus ornare nibh. Proin lacus ante, aliquet in consequat in, pharetra sit amet urna consectetur. </p>
+              <a class="btn" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics" target="_blank">find out more about javaScript</a>        
+            <div class="btnSaveForLater" id="btnSaveForLater10" >save for later</div>
+         </div> 
+      <div class="card"> 
+         <i class="information_boxes">Begginer</i>
+            <h1>Vanilla JS</h1>
+               <p class="jsParagraphs">Sed dui elit, vestibulum aliquet elit at, cursus ornare nibh. Proin lacus ante, aliquet in consequat in, pharetra sit amet urna consectetur. </p>
+            <a class="btn" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics" target="_blank">find out more about javaScript</a>        
+         <div class="btnSaveForLater" id="btnSaveForLater11" >save for later</div>
+      </div> 
+   <div class="card"> 
+      <i class="information_boxes">Master</i>
+         <h1>Vanilla Css</h1>
+            <p class="jsParagraphs">Sed dui elit, vestibulum aliquet elit at, cursus ornare nibh. Proin lacus ante, aliquet in consequat in, pharetra sit amet urna consectetur. </p>
+               <a class="btn" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics" target="_blank">find out more about javaScript</a>        
+            <div class="btnSaveForLater" id="btnSaveForLater12" >save for later</div>
+         </div> 
+      </div>
+   </div>
+<!-- End of cards with text information grid -->
+</div>
+          
+<!-- footer with company logo and copyright -->
+<footer>
+   <div class="images-container">
+      <a href="../index.html">
+         <img class="small_logo" src="../images/logo%20images/Sml%20com%20code%20with%20me-logos_transparent.png" alt="logo in small">
+            </a>
+         <div class="copyright">Capstone Project V — &copy; <em>HyperionDev 2023</em>
+      </div>
+   </div> 
+</footer>
+         
+<!-- links to javaScript files --> 
+<script src="../js/navbar.js"></script>
+<script src="../js/popup.js"></script>
+<script src="../js/04js.js"></script>
+
+</body>
+</html>
+  

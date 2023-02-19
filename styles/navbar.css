@@ -1,0 +1,148 @@
+/* styling the navbar and user nav bar */
+.navbars {
+   position: sticky;
+   z-index: 4;
+   top: 0;
+   background-color: black;
+   padding: 10px;
+}
+.openSideNav{
+   color: white;
+}
+/* user nav */
+.sidenav {
+   height: 100%;
+   width: 0;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: #111;
+   overflow-x: hidden;
+   transition: 0.5s;
+   padding-top: 60px;
+}
+.sidenav a {
+   padding: 8px 8px 8px 32px;
+   text-decoration: none;
+   font-size: 25px;
+   color: #818181;
+   display: block;
+   transition: 0.3s;
+}
+.sidenav a:hover {
+   color: #f1f1f1;
+}
+.sidenav .closebtn {
+   position: absolute;
+   top: 0;
+   right: 25px;
+   font-size: 36px;
+   margin-left: 50px;
+}
+.openSideNav, .userProfilePage {
+   font-size:30px;
+   cursor:pointer;
+}
+/* end of styling the navbar and user nav bar */
+
+
+/* style of user nav folder */
+.userProfilePage {
+   float: right;
+   color: white;
+}
+.sideUserPage {
+   height: 100%;
+   width: 0;
+   position: fixed;
+   z-index: 2;
+   top: 0;
+   right: 0;
+   background-color: #111;
+   overflow-x: hidden;
+   transition: 0.5s;
+   padding-top: 60px;
+}
+.sideUserPage a {
+   padding: 8px 8px 8px 32px;
+   text-decoration: none;
+   font-size: 30px;
+   color: #818181;
+   display: block;
+   transition: 0.3s;
+}
+.sideUserPage a:hover {
+   color: #f1f1f1;
+}
+.sideUserPage .closebtn {
+   position: absolute;
+   top: 0;
+   left:0 ;
+   font-size: 36px;
+}
+/* style of user name Id */
+.myId {
+   float: right;  
+   margin-right: 20px ;
+   top: 0;
+}
+#userDivSave {
+   margin: 100px 20px 20px;
+   width: 80%;
+   background-color: #ffffff;
+   height: 20%;
+   border-radius: 10px;
+   color: black;
+   text-align: center;
+   overflow-y: scroll;
+   height: 70%;
+   font-size: 13px;
+}
+/* style for the user Id H1 */
+#userDivSave h1{
+   font-size: 18px;
+   color: #86C8BC;
+}
+#userDivSave h3{
+   font-size: 28px;
+   color: #45c0a9;
+   padding: 10px 0;
+}
+/* scrollbar for the saved folder */
+div::-webkit-scrollbar  {
+   width: 7px;
+ }
+ div::-webkit-scrollbar-thumb {
+   border-radius: 4px;
+   background-color: rgba(0, 0, 0, .5);
+   box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+ }
+#userDivSave p {
+   color:#1e5248;
+   margin: 5px 15px 25px 15px;
+  }
+
+
+/* logout user  */
+.logOutUser {
+   float: right;  
+   margin-right: 20px ;
+}
+
+
+/* resize when screen becomes smaller than 450px*/
+@media screen and (max-height: 450px) {
+   .sidenav {
+      padding-top: 15px;
+   }
+   .sidenav a {
+      font-size: 18px;
+   }
+   .sideUserPage {
+      padding-top: 15px;
+   }
+   .sideUserPage a {
+      font-size: 18px;
+   }
+}

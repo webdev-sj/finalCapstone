@@ -1,0 +1,45 @@
+/* this style sheet is the main, and is shared with all the pages */
+
+html, body {
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ 
+/* footer styling, with logo and copyright */
+footer{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+.small_logo{
+  width: 10%;
+  min-width: 100px;
+  margin-top: 1.5vh;
+}
+.copyright {
+  text-align: right;
+  color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+  float: right;
+  padding-top: 15px;
+  margin-top: 2em;
+  font-size: 0.6em;
+}
+.images-container {
+  width: 98%;
+}
+
+/* resize when screen becomes smaller than 760px*/
+@media screen and (max-width: 760px) {
+  .navbar {   
+    flex-direction: column;
+  }
+  .copyright {
+    padding-top: 0;
+  }
+  
+}

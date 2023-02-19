@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CCWM</title>
+   <!-- link to style sheets -->
+   <link rel="stylesheet" href="./styles/styles.css">
+   <link rel="stylesheet" href="./styles/01index.css">
+   <link rel="stylesheet" href="./styles/navbar.css">
+   <link rel="stylesheet" href="./styles/popup.css">
+   <!-- favicon for image at top of tab -->
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>   
+<!-- main company logo -->
+<div class="logo_main">
+   <div>
+      <img class="main_logo" src="./images/logo%20images/com%20code%20with%20me-logos_white.png" alt="com code with me logo">
+   </div>
+
+<!-- first pop up to get name -->
+<div id="overlayName">
+   <div id="popupBox">
+       <span id="closeBtnPop" class="close-btn"></span>
+       <div class="userInformation">
+         <h1>Hello, and welcome to CCWM</h1>
+         <h3 class="titleUserPopup">please enter your name</h3>
+       </div>
+       <!-- input and submit buttons to input name -->
+      <div class="userPopInfo">
+         <input class="userInput" id="userInput" type="text" placeholder="enter your name" maxlength="10"> 
+         <input type="submit" value="Submit" class="btnUserName" id="btnUserName">
+      </div>
+   </div>
+</div>
+
+<!-- navbar -->
+<div class="navbars">
+
+   <div id="mySidenav" class="sidenav">
+      <a class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="./index.html">Home</a>
+      <a href="./pages/02html.html">html</a>
+      <a href="./pages/03css.html">css</a>
+      <a href="./pages/04js.html">javaScript</a>
+      <a href="./pages/05contact.html">contact</a>
+      <a href="./pages/userPage.html" id="myIdNav" class=""></a>
+   </div>
+<!-- open nav on hover -->
+<span class="openSideNav" style="font-size:30px;cursor:pointer" onmouseover="openNav()">&#9776;</span>
+
+<!-- side user page -->
+<div id="sideUserPage" class="sideUserPage">
+   <!-- close button function -->
+   <a class="closebtn" onclick="closeUserPage()">&times;</a>
+   <a href="./pages/userPage.html" id="myId" class="myId"></a>
+   <div id="userDivSave">
+      <h3 class="userDivTitle">Saved Items</h3>
+      <div id="userPageSavedIndex"></div>
+      <span id="userSavedItems" class="userSavedItems">    </span>
+   </div>
+   <!-- div to log out the user -->
+   <div id="logOutUser" class="logOutUser"><a href="">logout</a></div>
+</div>
+<!-- open nav on hover -->
+<span id="userProfilePage" class="userProfilePage" style="font-size:30px;cursor:pointer" onmouseover="openUserPage()"> 
+   <div id="userName">
+      </div>
+   </span>
+</div> 
+<!-- end of navbarss -->
+
+<div class="backGround">
+   <!-- subscription button directs you to 'contact us' page -->
+<div class="subscribe_box">
+   <div class="subscribe">
+      <a href="./pages/05contact.html" class="subscribe_text"><p>Subscribe now and join the millions learning web development</p></a> 
+   </div>
+</div>
+
+<div class="comments-main-bg">
+   <div class="commentsSection">
+      <h1>Comments & Reviews</h1>
+      <!-- div to hold the hardcoded comment items -->
+      <div id="hardcodedComments" class="hardcodedComments"></div>
+      <!-- div to hold the input income items -->
+     
+      <div id="CommentsAdded" class="commentsAdded"></div>
+         <div class="comment-input-bg">
+            <h3 class="title-comment">We'd love to hear for you, let us know how we did</h3>
+               <div class="flexReviews">
+               <!-- div for the inputs and button for inputs -->
+               <input type="text" id="userCommentName" class="userCommentName" placeholder="Your name">
+             <input type="text" id="userComment" class="userComment" spellcheck required placeholder="Your comment.." spellcheck required>
+            <button id="commentBtn" class="commentBtn">Add Comment</button>
+         </div>
+      </div>
+   </div>
+</div>
+
+<!-- quote in a div -->
+<div class="quote">
+   <div class="quote_bg">
+      <figure class="quote">
+         <blockquote>
+            <br>
+               <!-- previous quote before API link -->
+               <!-- <p id="quoteChange"Martin Fowler Any fool can write code that a computer can understand. Good programmers write code that humans can understand.</p> -->
+                  <p id="quoteChange"></p>
+                  <br>
+               </blockquote>
+            <figcaption class="fig" id="fig"></figcaption>
+         </figure>   
+      </div>
+   </div>
+</div>
+
+<!-- footer with company logo and copyright -->
+<footer>
+   <div class="images-container">
+      <a href="./index.html">
+         <img class="small_logo" src="./images/logo%20images/Sml%20com%20code%20with%20me-logos_transparent.png" alt="logo in small">
+      </a>
+      <div class="copyright">Capstone Project V — &copy; <em>HyperionDev 2023</em>
+      </div>
+   </div>
+</footer>
+
+<!-- links to javaScript files -->
+<script src="./js/popup.js"></script>
+<script src="./js/navbar.js"></script>
+<script src="./04js/home.js"></script>
+<script src="./js/01home.js"></script>
+</body>
+</html>
+  
