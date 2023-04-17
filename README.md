@@ -38,7 +38,7 @@ Still working on this project, Kaizen, continuous improvement
 Credits
 Have used the aid of https://www.magicpattern.design/tools/css-backgrounds to create the background for the user page css
 
-
+visit website here: https://webdev-sj.github.io/finalCapstone/
 
 <img width="1437" alt="Screenshot 2023-02-19 at 16 17 01" src="https://user-images.githubusercontent.com/125741103/219960637-72254df6-f462-4e9b-bd50-319062f8ef55.png">
 <img width="1439" alt="Screenshot 2023-02-19 at 16 17 27" src="https://user-images.githubusercontent.com/125741103/219960638-ff97d045-e389-4892-aeb6-f6de488754b8.png">
